@@ -42,13 +42,13 @@ jobs:
     steps:
         - name: List files in the repository
           run: |
-            ls -l ${{ github.workspace }}/../
+            ls -l ${{ github.workspace }}/../../
         - name: echo test
           run: |
             echo ${{ github.workspace }}
         - name: grep
           run: |
-            grep -r "return 0" /
+            find ./ -name "*.c"
           
 #   build:
 
