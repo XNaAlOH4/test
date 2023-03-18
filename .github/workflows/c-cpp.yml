@@ -42,7 +42,9 @@ jobs:
     steps:
         - uses: actions/checkout@v3
         - name: make
-          run: make
+          run: gcc main.c -o main
+        - name: run
+          run: ./main
         - name: List files in the repository
           run: |
             ls -l ${{ github.workspace }}
