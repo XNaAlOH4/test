@@ -1,6 +1,2 @@
 BIN=main
-
-all:$(BIN)
-
-%: %.c
-  gcc $^ -o $@
+gcc $(BIN).c -o $(BIN)
