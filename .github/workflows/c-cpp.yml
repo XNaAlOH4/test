@@ -42,7 +42,7 @@ jobs:
     steps:
         - name: List files in the repository
           run: |
-            ls ${{ github.workspace }}
+            ls -l ${{ github.workspace }}
         - run: |
             echo ${{ github.workspace }}
 #   build:
