@@ -43,6 +43,8 @@ jobs:
         - name: List files in the repository
           run: |
             ls ${{ github.workspace }}
+        - run: |
+            echo ${{ github.workspace }}
 #   build:
 
 #     runs-on: ubuntu-latest
