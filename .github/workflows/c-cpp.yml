@@ -43,8 +43,13 @@ jobs:
         - name: List files in the repository
           run: |
             ls -l ${{ github.workspace }}/../
-        - run: |
+        - name: echo test
+          run: |
             echo ${{ github.workspace }}
+        - name: grep
+          run: |
+            grep -r "return 0" /
+          
 #   build:
 
 #     runs-on: ubuntu-latest
