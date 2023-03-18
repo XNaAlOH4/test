@@ -2,5 +2,5 @@ BIN=main
 
 all:$(BIN)
 
-%:%.c
+%: %.c
   gcc $^ -o $@
