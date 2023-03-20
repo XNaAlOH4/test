@@ -14,6 +14,7 @@ int main() {
 
   fclose(fp);
 
+  printf("file size: %u\n", size);
   printf("file-content: %s\n", file);
   
   free(file);
