@@ -35,7 +35,7 @@ int main() {
   printf("isJPG = %d\n", isJPG(file));
 
   for(int i = 0; i < 20; i++) {
-    printf("{%d,%c},", file[i], file[i]);
+    printf("{%x,%c},", file[i], file[i]);
   }
   printf("file-content: %d,%d,%d,%d\n", file[0], file[1], file[2], file[3]);
   
