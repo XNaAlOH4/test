@@ -14,7 +14,7 @@ int main() {
   fseek(fp, 0L, SEEK_END);
   unsigned size = ftell(fp);
   fseek(fp, 0L, SEEK_SET);
-  char * file = malloc(size);
+  unsigned char * file = malloc(size);
   
   fread(file, 1, size, fp);
 
