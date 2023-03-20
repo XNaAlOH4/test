@@ -22,7 +22,7 @@ int main() {
 
   printf("file size: %u\n", size);
   printf("isJPG = %d\n", isJPG(file));
-  printf("file-content: %s\n", file);
+  printf("file-content: %d,%d,%d,%d\n", file[0], file[1], file[2], file[3]);
   
   free(file);
   return 0;
