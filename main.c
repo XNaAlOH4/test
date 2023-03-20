@@ -4,7 +4,7 @@
 #define FILE_NAME "G-test.jpg"
 
 int main() {
-  FILE * fp = fopen(FILE_NAME);
+  FILE * fp = fopen(FILE_NAME, "rb");
   fseek(fp, 0L, SEEK_END);
   unsigned size = ftell(fp);
   fseek(fp, 0L, SEEK_SET);
@@ -14,7 +14,7 @@ int main() {
 
   fclose(fp);
 
-  printf("file-content: %s\n");
+  printf("file-content: %s\n", file);
   
   free(file);
   return 0;
