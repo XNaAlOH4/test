@@ -16,7 +16,7 @@ int main() {
   fseek(fp, 0L, SEEK_SET);
   char * file = malloc(size);
   
-  fwrite(file, 1, size, fp);
+  fread(file, 1, size, fp);
 
   fclose(fp);
 
