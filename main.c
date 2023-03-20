@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define FILE_NAME "G-test.jpeg"
+#define FILE_NAME "G-test.jpg"
 
 int main() {
   FILE * fp = fopen(FILE_NAME);
