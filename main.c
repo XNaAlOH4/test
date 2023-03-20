@@ -4,6 +4,17 @@
 #define FILE_NAME "G-test.jpg"
 
 #define JPG_SIG 0xE0FFD8FF
+#define JPG_SOI (unsigned short) 0xFFD8
+#define JPG_APP (unsigned short) 0xFFE0
+#define JPG_SOF (unsigned short) 0xFFC0
+#define JPG2SOF (unsigned short) 0xFFC2
+#define JPG_DHT (unsigned short) 0xFFC4
+#define JPG_DQT (unsigned short) 0xFFDB
+#define JPG_DRI (unsigned short) 0xFFDD
+#define JPG_SOS (unsigned short) 0xFFDA
+#define JPG_RST (unsigned short) 0xFFD0
+#define JPG_COM (unsigned short) 0xFFFE
+#define JPG_EOI (unsigned short) 0xFFD9
 
 char isJPG(char *p) {
   return JPG_SIG == *(unsigned*)p;
