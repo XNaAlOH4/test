@@ -40,5 +40,6 @@ int main() {
   printf("file-content: %d,%d,%d,%d\n", file[0], file[1], file[2], file[3]);
   
   free(file);
+  printf("Finished\n");
   return 0;
  }
