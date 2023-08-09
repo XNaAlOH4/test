@@ -17,7 +17,7 @@
 #define JPG_EOI (unsigned short) 0xFFD9
 
 char isJPG(char *p) {
-  return JPG_SIG == JPG SIG&*(unsigned*)p;
+  return JPG_SIG == JPG_SIG&*(unsigned*)p;
 }
 
 int main() {
